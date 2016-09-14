@@ -91,6 +91,7 @@ footer{height:30px;}
 }
 #home>img
 {
+	height:auto;
 	margin:auto;
 }
 .offset6

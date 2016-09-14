@@ -695,7 +695,8 @@ footer
 }
 .mypic
 {
-    width:480px;
+	height:517px;
+    width:500px;
     display:block;
     float:left;
     overflow:hidden;
