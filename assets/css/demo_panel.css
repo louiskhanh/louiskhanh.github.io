@@ -1,0 +1,31 @@
+#options_panel {width:195px; position:fixed; left: -195px; top: 115px; margin-left: 0; z-index:9999;-webkit-box-shadow:  1px 1px 10px #a5a5a5; -moz-box-shadow : 1px 1px 10px #a5a5a5; opacity:0.9; }
+#options_panel h3 { width: 39px; height: 155px; position: absolute; top:50px; right: -39px; margin: 0;  cursor: pointer; background:transparent url(../img/wrench.png) no-repeat center center;}
+#options_panel h3 span {margin:5px 0 0 8px;}
+#options_panel .Settings { font-size:14px; text-transform: capitalize; color:#B1B1B1;}
+#options_panel .options { background-color:#fff; padding:13px 13px 47px;}
+#options_panel h5 {text-transform: capitalize;}
+#options_panel h5, #options_panel .options { color:#666;}
+
+#options_panel select {width:100%; font-size:10px; text-transform:uppercase; color:#ccc; background:#f1f1f1; border-top:2px solid #e5e5e5; border-left:2px solid #e5e5e5; outline:none !important; height: 35px; }
+#options_panel input[type="text"] {width:50px; font-size:10px; text-transform:uppercase; color:#b1b1b1; background:#fff; padding:2px; border:1px solid #c6c6c6; border-radius: 3px; outline:none !important; height:17px; vertical-align:top; }
+
+#options_panel .dark_light_demo {list-style: none;margin: 0;padding: 0;}
+#options_panel .dark_light_demo li {cursor: pointer; float: left; height: 28px; margin: 2px; width: 85px;  text-align:center; padding-top: 5px; font-weight: 600;}
+
+#options_panel .style_demo {list-style: none;margin: 0;padding: 0;}
+#options_panel .style_demo li { background-color:#f1f1f1; border: 1px solid #dcdcdc; color:#7c7c7c; cursor: pointer; float: left; height: 28px; margin: 2px; width: 85px;  text-align:center; font-weight: 600;}
+#options_panel .style_demo li a:hover , #options_panel .style_demo li a { color:#7c7c7c; height:30px; display:block; padding-top:5px; }
+
+#options_panel .color_suggestions {list-style: none; margin: 0;padding: 0; }
+#options_panel .color_suggestions li {cursor: pointer; float: left; height: 32px; margin: 4px; width: 32px;}
+
+#options_panel .note {margin-top:10px;}
+
+#options_panel .color_picker_box { float:right;}
+#options_panel  .color_picker_title { float:left; font-size: 12px; color: #b1b1b1; padding: 2px 3px 14px; font-weight: 500;line-height:18px;}
+#options_panel td { padding:6px 0 12px;}
+#options_panel .last { padding: 20px 0 10px 0; border-bottom: none;}
+
+
+
+
