@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="js/angular-ui-bootstrap-modal.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body ng-app="MyApp" ng-controller="MyCtrl">
+
+    <button class="btn" ng-click="open()">Open Modal</button>
+
+    <div modal="showModal" close="cancel()"id="section3" class="section" style="width:800px;left:42%;top:10%;">
+      <div class="modal-header">
+          <h4>QFL GLOBAL</h4>
+      </div>
+      <div class="modal-body">
+          
+      
+      <div id="section3content">
+      <div id="thank_you_block">
+      <span class="bold_text_ty">THANK YOU FOR YOUR PURCHASE</span><br>
+      We hope you enjoy the benefits of our Premium Garcinia Cambogia Trial<br>
+      </div>
+      <div id="upsell_block_1">
+      <span class="bold_text_ty red_text">WAIT! DON'T FORGET TO BOOST YOUR WEIGHT LOSS!</span><br>
+      Customers that purchased Garcinia Cambogia also purchased Wu Yi Slimming Tea.<br>
+      </div>
+      <div id="upsellwrap">
+      <form action="/MK/garcinia/step3.php" method="POST" id="upsell_form" name="upsell_form" class="ng-pristine ng-valid" accept-charset="ISO-8859-1">                
+      <input type="hidden" name="limelight_charset" id="limelight_charset" value="ISO-8859-1">
+            <input type="hidden" id="isWebForm" value="1">
+            <input type="hidden" id="hasFormSubmitted" value="">
+      <input type="hidden" name="temp_order" id="temp_order" value=""><input type="hidden" name="step_upsell" id="step_upsell" value=""><input type="hidden" name="product_id" id="product_id" value="94"><input type="hidden" name="act_up" id="act_up" value="">
+      <div id="upsell_block" style="margin:0 auto;width:600px;background-image:url(files/coupon.png);height:340px;background-size:contain;background-repeat:no-repeat;">
+      <img src="https://qflglobal.com/MK/garcinia/images/can-4.png" style="padding-left: 5px;" id="step2_bottle" class="ib">
+      <div id="dye" class="ib tac">
+                                      <div id="maxResults" class="tac up">maximize your results!</div>
+                                      <div id="maxResultsCopy" class="tac">Release Built Up Toxins &amp; Lose Excess Inches with <br><span id="productName">Wu Yi Slimming Tea</span></div>
+                                      <p id="shippingty"><span>ONLY</span> $19.99</p>
+                                      <p id="sAndH" class="up">shipping &amp; handling</p>
+                                      <p id="tryRiskFree" class="up">try it risk free! made in the u.s.a.</p>
+                                  </div>
+                              </div>
+      <input type="hidden" class="upsell_price_x" id="upsell_price_16" name="upsell_custom_price[94]" value="0.00">
+            <a href="javascript:;" onclick="submitUpsell();">
+                              <center><input type="image" src="files/upsell_button.png" id="upsell_button" value="Yes"></center>
+                              <input type="hidden" name="clickUpsale" value="1">
+      </a>
+       <input type="hidden" name="form_token" id="form_token" value="27f4613c817372fae7cef4e4088118de18449e9b"><input type="hidden" name="campaign_id" id="campaign_id" value="69"><input type="hidden" name="shipping_id" id="shipping_id" value="28"><input type="hidden" name="shipping_id_price" id="shipping_id_price" value="4.90"><input type="hidden" name="product_id" id="product_id" value="16"><input type="hidden" name="product_qty" id="product_qty" value="1"><input type="hidden" name="product_price" id="product_price" value="0.00"><input type="hidden" name="insureship_product_id" id="insureship_product_id" value=""><input type="hidden" name="insureship_product_price" id="insureship_product_price" value=""><input type="hidden" name="insureship_product_qty" id="insureship_product_qty" value=""><input type="hidden" name="insureship_shipping_id" id="insureship_shipping_id" value=""><input type="hidden" name="insureship" id="insureship" value="0"></form>                
+                          <div id="no_thank_you_block">
+                              <h2>We Care About Your Privacy</h2>
+                              <div class="w100 mauto"><img src="files/secure.png"></div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="modal-footer">
+        <button class="btn btn-success" ng-click="ok()"> No Thanks, I decline this offer</button>
+      </div>
+              </div>
+  </body>
+</html>
