@@ -1,0 +1,107 @@
+/* 14.0 Teams */
+
+body {
+  background-image: none;
+  background-color: #f2f3f6;
+}
+
+#left {
+  width: 49%;
+  height: auto;
+  float: left;
+  padding: 10px;
+  overflow-y: scroll;
+  background: #666;
+}
+
+#right {
+  width: 49%;
+  height: auto;
+  float: right;
+  padding: 10px;
+  overflow-y: scroll;
+  background: #eee;
+}
+
+.person {
+  width: 95%;
+  height: 80px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 10px;
+  -webkit-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.1);
+	box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.1);
+}
+
+.person img {
+  border-radius: 80%;
+  float: left;
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 5px;
+}
+
+.person span.name {
+  font-size: 1.600em;
+  line-height: 1.000em;
+  text-align: left;
+  display: block;
+  position: relative;
+  top: 10px;
+}
+
+.person span.sub {
+  font-size: 1.100em;
+  line-height: 1.000em;
+  color: #b2b4c9;
+  text-align: left;
+  display: block;
+  position: relative;
+  top: 2px;
+}
+
+.person .divide {
+  width: 33%;
+  height: 100%;
+  float: left;
+}
+
+.person .contact p {
+  text-align: center;
+  text-indent: none;
+}
+
+.person .control img {
+  float: right;
+  position: relative;
+  right: 0;
+  border-radius: 0;
+}
+
+.person .control span {
+  text-align: right;
+  float: right;
+  clear: both;
+  display: inline-block;
+  position: relative;
+  bottom: -25px;
+  color: #92ebd2;
+}
+
+.person .control .assigned {
+  color: #b2b4c9;
+}
+
+.person .dept {
+  width: 50%;
+}
+
+.person .divide {
+  min-width: 32%;
+  max-width: auto;
+}
+
+.person .control {
+  float: right;
+}

@@ -1,0 +1,80 @@
+<div id="menu">
+    <ul>
+        <li><a href="#">Common Workspace</a></li>
+        <li><a href="#">My Workspace</a></li>
+        <li><a href="javascript:;" data-toggle="modal" data-target="#addDir"><img src="/img/add.svg"/>Add New</a></li>
+    </ul>
+
+    <span class="right">
+        <a href="javascript:;" title="Upload File"  data-toggle="modal" data-target="#addFile"><img  src="/img/upload.svg"/></a>
+        <img src="/img/grid.svg"/>
+        <img src="/img/sort.svg"/>
+        <img src="/img/menu.svg"/>
+      </span>
+</div>
+
+<div id="secondary">
+    <img src="/img/back.svg">
+    <img src="/img/forward.svg"/>
+    <img src="/img/dropdown.svg" class="drop"/>
+</div>
+
+<!-- Add Folder -->
+<div id="addDir" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <form role="form" method="post" action="" enctype="multipart/form-data">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add Folder</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" name="Name" placeholder="Name">
+                    </div>
+                </div>
+                <input type="hidden" name="ParentID" value="">
+                <input type="hidden" name="Path" value="">
+                <input type="hidden" name="csrf_token" value="{csrf_token}">
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<!-- Add File  -->
+<div id="addFile" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <form role="form" method="post" action="" enctype="multipart/form-data">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add File</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>File</label>
+                        <input type="file" class="form-control" name="Path" placeholder="Path">
+                    </div>
+                </div>
+                <input type="hidden" name="ParentID" value="">
+                <input type="hidden" name="Path" value="">
+                <input type="hidden" name="csrf_token" value="{csrf_token}">
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>

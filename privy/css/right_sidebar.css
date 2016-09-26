@@ -1,0 +1,61 @@
+/* 11.0 Right Sidebar */
+
+.right_sidebar {
+	width: 280px;
+	height: auto;
+	background: #fff;
+	padding: 10px;
+	float: right;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -999999;
+	-webkit-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.1);
+	box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.1);
+}
+
+.right {
+	width: 100%;
+	height: auto;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+ .right_title {
+		float: left;
+		font-size: 16px;
+		line-height: 0;
+		margin: 0;
+		padding: 0;
+		color: #CDCDCD;
+		position: relative;
+		top: 10px;
+		left: 30px;
+}
+
+.right_heading {
+	float: right;
+	text-align: left;
+	width: 80%;
+	position: relative;
+	bottom: 35px;
+	color: #D1D1D1;
+	font-family: 'LatoWeb';
+}
+
+.right-menu {
+	width: auto;
+	height: inherit;
+	float: right;
+	display: table;
+	margin-right: 15px;
+}
+
+
+.col-md-3 {
+	float: right;
+	position: relative;
+	right: 0;
+}

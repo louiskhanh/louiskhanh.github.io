@@ -1,0 +1,55 @@
+/* 10.0 Search */
+
+.query {
+    width: 280px;
+    max-height: 90px;
+    background: #fff;
+    padding: 10px;
+    float: left;
+    position: absolute;
+    z-index: -999999;
+    -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+}
+.query .display {
+    margin-right: 5px;
+    position: relative;
+    bottom: 35px;
+    color: #d3d3d3;
+}
+
+/* 10.1 Search Results */
+
+.search {
+    float: left;
+    position: relative;
+    bottom: 35px;
+}
+.search input[type="text"] {
+    border: none;
+}
+.glyphicon-folder-open {
+    font-size: 20px;
+    float: left;
+}
+.file {
+    float: left;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #CDCDCD;
+}
+.glyphicon-chevron-right {
+    float: right;
+    font-size: 16px;
+}
+#icon {
+    color: #D9D9D9;
+}
+.assets {
+    color: #D1D1D1;
+    width: 100%;
+    float: left;
+    clear: both;
+    margin-bottom: 25px;
+    text-align: center;
+}

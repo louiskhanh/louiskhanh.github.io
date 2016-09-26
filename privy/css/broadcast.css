@@ -1,0 +1,43 @@
+
+/* 6.1 Broadcast */
+
+.item .glyphicon-chevron-down {
+	font-size: 10px;
+	line-height: 10px;
+	position: relative;
+	left: 10px;
+}
+
+#title {
+	margin-right: 5px;
+	position: relative;
+	bottom: 25px;
+}
+
+.heading {
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.timestamp {
+	float: right;
+	width: auto;
+	color: #D3D3D3;
+	position: relative;
+}
+
+.user {
+	float: left;
+	width: auto;
+	color: #D3D3D3;
+}
+
+.message {
+	width: 86%;
+	float: right;
+	position: relative;
+	bottom: 10px;
+	font-family: 'LatoWebBold';
+}

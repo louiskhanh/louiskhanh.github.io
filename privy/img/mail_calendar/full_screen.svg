@@ -1,0 +1,17 @@
+<svg id="full_screen" data-name="full screen" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #26272e;
+        stroke-width: 1px;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="0.5" y="2.5" width="7" height="7"/>
+  <path id="Rectangle_9_copy" data-name="Rectangle 9 copy" class="cls-2" d="M2557,617.437V615h7v7h-2.44" transform="translate(-2554.5 -614.5)"/>
+</svg>

@@ -1,0 +1,510 @@
+/* 22.0 Calendar */
+
+/* Imports */ 
+
+@import url("mail-blank.css");
+@import url("main.css");
+
+/* Panel Sections */ 
+
+.panel-body {
+    position: relative;
+}
+.panel-heading {
+    position: relative;
+    clear: both;
+}
+
+.col-sm-3 {
+    border-right: 1px solid #f2f3f6;
+    max-width: 12%;
+    float: left;
+}
+
+.column {
+    float: right;
+    width: 88%;
+    max-height: 430px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 0;
+    position: relative;
+}
+
+.column-a {
+    float: right;
+    width: 87.5%;
+    padding: 10px;
+}
+
+/* Calendar Box */
+
+.box {
+    width: 14.25%;
+    height: 100px;
+    float: left;
+    border: 1px solid #f2f3f6;
+    position: relative;
+}
+
+
+.today {
+    background: #ff687b;
+    border: #ff687b;
+}
+
+.today span.number {
+    color: #fff;
+}
+
+span.today {
+    float: right;
+    clear: none;
+    width: auto;
+    padding: 5px;
+    font-weight: bold;
+}
+
+span.number {
+    float: left; 
+    clear: none;
+    padding: 5px;
+}
+
+span.notice {
+    width: 100%;
+    clear: both;
+    float: left;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+}
+
+span.second {
+    bottom: 15px;
+}
+
+span.third {
+    bottom: 30px;
+}
+
+span.fourth {
+    bottom: 45px;
+}
+
+.today span.notice {
+    color: #fff;
+}
+
+.last {
+    border-bottom-right-radius: 10px;
+}
+
+.days {
+    padding: 0;
+    color: #babccf;
+    min-height: 0;
+    border-bottom: 1px solid #f2f3f6;
+    border: 0;
+    height: auto;
+    text-align: right;
+    padding: 5px;
+}
+
+
+h2 {
+    color: #ff687b;
+    font-family: 'LatoWebLight';
+}
+
+.horizontal li {
+    list-style-type: none;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    margin-right: 15px;
+}
+
+.horizontal li .active {
+    color: #414141;
+}
+
+.right {
+    float: right;
+    text-align: right;
+    color: #babccf;
+}
+
+.click {
+    background: #ff687b;
+    color: #fff;
+    width: 100%;
+    border: 0;
+    height: 50px;
+    text-align: center;
+    
+}
+
+.checkbox {
+    display: block;
+    margin-left: 15px;
+    margin-top: 10px;
+    color: #dddee7;
+}
+
+h5 {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.checkbox li {
+    margin-top: 15px;
+    display: block;
+}
+
+.checkbox {
+  padding-left: 5px;
+}
+
+.checkbox label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 2px;
+}
+
+.checkbox label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 0;
+  margin-left: -18px;
+    margin-top: -3px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.checkbox label::after {
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 0;
+  margin-left: -20px;
+  padding-left: 3px;
+  padding-top: 1px;
+  font-size: 11px;
+  color: #555555;
+}
+
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+  z-index: 1;
+}
+.checkbox input[type="checkbox"]:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: 2px;
+    background: #ff687b;
+}
+.checkbox input[type="checkbox"]:checked + label::after {
+    padding: 2px;
+    padding-left: 5px;
+    padding-top: -10px;
+  font-family: "FontAwesome";
+    color: #fff;
+  content: "\f00c";
+}
+
+.checkbox input[type="checkbox"]:disabled + label {
+  opacity: 0.65;
+}
+.checkbox input[type="checkbox"]:disabled + label::before {
+  background-color: #eeeeee;
+  cursor: not-allowed;
+}
+
+.checkbox-primary input[type="checkbox"]:checked + label::before {
+  background-color: #ff687b;
+  border-color: #ff687b;
+}
+.checkbox-primary input[type="checkbox"]:checked + label::after {
+  color: #fff;
+}
+
+/* Calendar Week */ 
+
+.box-a {
+    width: 14.25%;
+    min-height: 35px;
+    float: left;
+    border: 1px solid #f2f3f6;
+    position: relative;
+}
+
+/* POP UP */ 
+
+.popup {
+    width: 160px;
+    padding: 10px;
+    min-height: 35px;
+    max-height: auto;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: #fff;
+    border-top: 4px solid #a5cbff;
+    -webkit-box-shadow: 2px 2px 15px 4px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 15px 4px rgba(0,0,0,0.1);
+    font-size: 1.000em;
+    z-index: 9999999;
+}
+
+.popup span {
+    width: 100%;
+    float: left;
+    clear: both;
+    margin-bottom: 10px;
+    font-size: 1.000em;
+}
+
+.popup span.latte {
+    color: #b2b4c9;
+}
+
+.popup .info {
+    color: #414141;
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    bottom: 20px;
+}
+
+.popup span.link {
+    float: right;
+    width: auto;
+    margin-bottom: 0;
+}
+
+.popup p {
+    position: relative;
+    top: 20px;
+    display: block;
+}
+
+/* Notification Menu */ 
+
+.panel-body {
+    position: relative;
+}
+
+.notification {
+	width: 200px;
+	height: auto;
+	background: white;
+	position: absolute;
+    right: 60px;
+    top: 80px;
+	padding: 15px;
+	z-index: 999999;
+    -webkit-box-shadow: 5px 5px 15px 4px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 15px 4px rgba(0,0,0,0.2);
+}
+
+/*
+.notification::before {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid red;
+	content: '';
+	position: absolute;
+    bottom: 30px;
+    right: 5px;
+}
+*/
+
+.notification span {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.notification span.cappuccino {
+    color: #b2b4c9;
+    font-size: .800em;
+    float: left;
+    clear: both;
+}
+
+.notification span.appointment {
+    color: #414141;
+    float: left; 
+    max-width: 80%;
+}
+
+.notification span.close {
+    font-size: 1.00em;
+    width: auto;
+    float: right;
+}
+
+.notification span.pumpkin {
+    color: #b2b4c9;
+    width: 100%;
+    clear: both;
+    float: left;
+    text-align: center;
+}
+
+menni {
+    font-size: 1.200em;
+}
+
+/* Detailed Day */ 
+
+#detailed {
+    position: absolute;
+    right: 0;
+    top: 0; 
+    bottom: 0;
+    z-index: 9999999;
+    background: #fff;
+    width: 240px;
+    height: auto;
+    min-height: 100%;
+    max-height: 100%;
+    box-shadow: -5px 0px 10px 1px rgba(0,0,0,0.1);
+    -webkit-box-shadow: -5px 0px 10px 1px rgba(0,0,0,0.1);
+    padding-bottom: 70%
+}
+
+#detailed .cat {
+    background: #ff687b;
+    color: #fff;
+    width: 100%;
+    max-height: 100px;
+    min-height: 65px;
+    padding: 10px;
+}
+
+#detailed .arrow {
+    background: #ff687b;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    padding-left: 3px;
+    position: absolute;
+    left: -12px;
+    z-index: 9999;
+    border-radius: 100%;
+}
+
+#detailed .cat span.details {
+    float: right; 
+    clear: both;
+    width: auto;
+    color: #fff;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    position: relative;
+}
+
+#detailed span {
+    margin-bottom: 2px;
+    margin-top: 2px;
+    width: 100%;
+}
+
+#detailed span.all {
+    color: #b2b4c9;
+    font-size: .800em;
+    float: left;
+    clear: both;
+    position: relative; 
+    left: 20px;
+}
+
+#detailed span.candy {
+    color: #414141;
+    float: left;
+    clear: both;
+    position: relative; 
+    left: 20px;
+}
+
+#detailed span.unseen {
+    width: auto;
+    float: right;
+    color: #b2b4c9;
+}
+
+#detailed .col-md-10 {
+    background: inherit;
+    position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+    padding: 10px;
+}
+
+.border-left-red {
+    border-left: 2px solid #ff687b;
+}
+
+.border-left-green {
+    border-left: 2px solid #9aefde;
+}
+
+.border-left-gray {
+    border-left: 2px solid #b2b4c9;
+}
+
+#detailed .add {
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    color: #ff687b;
+    font-size: 1.500em;
+}
+
+.bigger {
+    font-weight: bolder;
+    font-size: 1.200em;
+    position: relative;
+    left: 15px;
+    top: 3px;
+}
+
+
+/* Color */
+
+.shadow {
+    -webkit-box-shadow: 2px 2px 15px 4px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 15px 4px rgba(0,0,0,0.2);
+}
+
+span.chat {
+    color: #b2b4c9;
+    font-size: .900em;
+    line-height: 11px;
+    padding: 10px;
+}
+
+.ped {
+    padding: 5px;
+}
+
+.midgies {
+    margin-left: 5px;
+    margin-right: 5px;
+}

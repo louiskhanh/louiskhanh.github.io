@@ -1,0 +1,908 @@
+/* Stylesheet Legend Guide
+*
+* 0.0 - CSS RESET
+* 1.0 - Typography
+	** 1.1 - Font Family
+* 2.0 - Header Styles
+* 3.0 - Elements
+	** 3.1 - Images
+	** 3.2 - Links
+* 4.0 - Forms
+* 5.0 - Basic Layout
+	** 5.1 - Clear
+    ** 5.2 - Floats
+* 6.0 Top
+* 7.0 - Sidebar
+	** 7.1 - Broadcast.css - Broadcast
+	** 7.2 - Notification.css - Notifications
+* 8.0 - Cutout Border
+* 9.0 - Dock
+* 10.0 - Search.css - Search
+	** 10.1 - Search.css - Search Results
+* 11.0 - Right_Sidebar.css - Right Sidebar
+* 12.0 - Chatbox
+* 13.0 - Menu
+* 14.0 - Team.css - Teams
+* 15.0 - Workspace.css - Workspace
+* 16.0 - Menu
+* 17.0 - Tickets.css - Tickets
+* 18.0 - Leads.css - Leads
+* 19.0 - Colors
+* 20.0 - Mail.css - Mail
+    ** 20.1 - Mail-Blank.css - Mail-Blank
+* 22.0 - Calendar.css - Calendar
+*/
+
+
+/* 0.0 CSS RESET */
+
+html, body, div, span, object, h1, h2, h3, h4 h5, h6, p, blockquote, pre, abbr, address, cite, code, img, a, small, strong, sub, sup, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, caption, tr, th, td, article, aside, canvas, details, footer, header, nav, section {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		font-size: 100%;
+		vertical-align: baseline;
+		background: transparent;
+}
+
+body {
+		line-height: 1;
+}
+
+article, aside, details, figure, footer, header, nav, section {
+		display: block;
+}
+
+nav ul {
+		list-style-type: none;
+}
+
+a {
+		text-decoration: none;
+		margin: 0;
+		padding: 0;
+		font-size: 100%;
+		vertical-align: baseline;
+		background: transparent;
+}
+
+a:hover, a:active, a:focus {
+		outline: 0;
+}
+
+input, select {
+		vertical-align: baseline;
+}
+
+ol li, ul li {
+		list-style-type: none;
+}
+
+
+img {
+		border: 0;
+}
+
+a img {
+		border: 0;
+	}
+
+table {
+		border-collapse: collapse;
+		border-spacing: 0;
+}
+
+caption, th, td {
+		font-weight: normal;
+		text-align: left;
+}
+
+blockquote, q {
+		quotes: "" "";
+}
+
+blockquote: before, blockquote:after, q:before, q:after {
+		content: "";
+}
+
+/* 1.0 Typography */
+
+body, button, input, select, textarea {
+		font-size: 13px;
+		font-family: arial, helvetica, sans-serif;
+		color: #212121;
+		text-align: left;
+}
+
+h1, h2, h3, h4 {
+		clear: both;
+		text-align: left;
+		font-family: PT Sans Caption;
+}
+
+p {
+		text-align: left;
+		line-height: 25px;
+}
+
+b, strong {
+		font-weight: bold;
+}
+
+cite, i {
+		font-style: italic;
+}
+
+blockquote {
+		margin: 5px;
+}
+
+/* 1.1 Font Family */
+
+@font-face {
+    font-family: 'LatoWebBlack';
+    src: url('../fonts/Lato-Black.eot');
+    src: url('../fonts/Lato-Black.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Black.woff2') format('woff2'),
+         url('../fonts/Lato-Black.woff') format('woff'),
+         url('../fonts/Lato-Black.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'LatoWebBlack';
+    src: url('../fonts/Lato-BlackItalic.eot');
+    src: url('../fonts/Lato-BlackItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-BlackItalic.woff2') format('woff2'),
+         url('../fonts/Lato-BlackItalic.woff') format('woff'),
+         url('../fonts/Lato-BlackItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'LatoWebBold';
+    src: url('../fonts/Lato-Bold.eot');
+    src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Bold.woff2') format('woff2'),
+         url('../fonts/Lato-Bold.woff') format('woff'),
+         url('../fonts/Lato-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'LatoWebBold';
+    src: url('../fonts/Lato-BoldItalic.eot');
+    src: url('../fonts/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-BoldItalic.woff2') format('woff2'),
+         url('../fonts/Lato-BoldItalic.woff') format('woff'),
+         url('../fonts/Lato-BoldItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'LatoWebHairline';
+    src: url('../fonts/Lato-Hairline.eot');
+    src: url('../fonts/Lato-Hairline.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Hairline.woff2') format('woff2'),
+         url('../fonts/Lato-Hairline.woff') format('woff'),
+         url('../fonts/Lato-Hairline.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'LatoWebHairline';
+    src: url('../fonts/Lato-HairlineItalic.eot');
+    src: url('../fonts/Lato-HairlineItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-HairlineItalic.woff2') format('woff2'),
+         url('../fonts/Lato-HairlineItalic.woff') format('woff'),
+         url('../fonts/Lato-HairlineItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'LatoWebHeavy';
+    src: url('../fonts/Lato-Heavy.eot');
+    src: url('../fonts/Lato-Heavy.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Heavy.woff2') format('woff2'),
+         url('../fonts/Lato-Heavy.woff') format('woff'),
+         url('../fonts/Lato-Heavy.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'LatoWebHeavy';
+    src: url('../fonts/Lato-HeavyItalic.eot');
+    src: url('../fonts/Lato-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-HeavyItalic.woff2') format('woff2'),
+         url('../fonts/Lato-HeavyItalic.woff') format('woff'),
+         url('../fonts/Lato-HeavyItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'LatoWeb';
+    src: url('../fonts/Lato-Italic.eot');
+    src: url('../fonts/Lato-Italic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Italic.woff2') format('woff2'),
+         url('../fonts/Lato-Italic.woff') format('woff'),
+         url('../fonts/Lato-Italic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'LatoWebLight';
+    src: url('../fonts/Lato-Light.eot');
+    src: url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Light.woff2') format('woff2'),
+         url('../fonts/Lato-Light.woff') format('woff'),
+         url('../fonts/Lato-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'LatoWebLight';
+    src: url('../fonts/Lato-LightItalic.eot');
+    src: url('../fonts/Lato-LightItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-LightItalic.woff2') format('woff2'),
+         url('../fonts/Lato-LightItalic.woff') format('woff'),
+         url('../fonts/Lato-LightItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'LatoWebMedium';
+    src: url('../fonts/Lato-Medium.eot');
+    src: url('../fonts/Lato-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Medium.woff2') format('woff2'),
+         url('../fonts/Lato-Medium.woff') format('woff'),
+         url('../fonts/Lato-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'LatoWebMedium';
+    src: url('../fonts/Lato-MediumItalic.eot');
+    src: url('../fonts/Lato-MediumItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-MediumItalic.woff2') format('woff2'),
+         url('../fonts/Lato-MediumItalic.woff') format('woff'),
+         url('../fonts/Lato-MediumItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'LatoWeb';
+    src: url('../fonts/Lato-Regular.eot');
+    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Regular.woff2') format('woff2'),
+         url('../fonts/Lato-Regular.woff') format('woff'),
+         url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'LatoWebSemibold';
+    src: url('../fonts/Lato-Semibold.eot');
+    src: url('../fonts/Lato-Semibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Semibold.woff2') format('woff2'),
+         url('../fonts/Lato-Semibold.woff') format('woff'),
+         url('../fonts/Lato-Semibold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'LatoWebSemibold';
+    src: url('../fonts/Lato-SemiboldItalic.eot');
+    src: url('../fonts/Lato-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-SemiboldItalic.woff2') format('woff2'),
+         url('../fonts/Lato-SemiboldItalic.woff') format('woff'),
+         url('../fonts/Lato-SemiboldItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'LatoWebThin';
+    src: url('../fonts/Lato-Thin.eot');
+    src: url('../fonts/Lato-Thin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Thin.woff2') format('woff2'),
+         url('../fonts/Lato-Thin.woff') format('woff'),
+         url('../fonts/Lato-Thin.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'LatoWebThin';
+    src: url('../fonts/Lato-ThinItalic.eot');
+    src: url('../fonts/Lato-ThinItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-ThinItalic.woff2') format('woff2'),
+         url('../fonts/Lato-ThinItalic.woff') format('woff'),
+         url('../fonts/Lato-ThinItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* 2.0 Header Styles */
+
+h1 {
+		font-size: 28px;
+}
+
+h2 {
+		font-size: 26px;
+}
+
+h3 {
+		font-size: 22px;
+}
+
+h4 {
+		font-size: 18px;
+}
+
+/* 3.0 Elements */
+
+hr {
+		background: inherit;
+		border: 0;
+		height: 1px;
+		margin-bottom: 5px;
+}
+
+ul, ol {
+		margin: ;
+}
+
+ul {
+		list-style: disc;
+}
+
+ol {
+		list-style: decimal;
+}
+
+img {
+		height: auto;
+		width: auto;;
+		margin: 0;
+		padding: 0;
+}
+
+/* 3.1 Images */
+
+.avatar {
+	width: 30px;
+	height: 30px;
+	border-radius: 80%;
+	margin: 0;
+	margin-right: 5px;
+	padding: 0;
+	float: left;
+}
+
+.profile {
+	width: 20px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.icon {
+	width: auto;
+	max-width: 16px;
+	height: auto;
+	max-height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+/* 3.2 Links */
+
+a {
+	color: #4e99ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8ab8ff;
+    text-decoration: none;
+    font-style: italic;
+}
+
+a:active {
+    color: #8ab8ff; 
+}
+
+/* 4.0 Forms */
+
+
+/* 5.0 Basic Layout */
+
+body {
+	width: 100%;
+  background: url(../img/bg.png) center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	font-family: 'LatoWeb';
+}
+
+/* 5.1 Clear */
+
+.clear {
+	height: 25px;
+	clear: both;
+}
+
+.clear-full {
+	width: 100%;
+	height: 25px;
+	clear: both;
+}
+
+.clear-chat {
+	height: 25px;
+	clear: both;
+}
+
+.clear-full-sm {
+    width: 100%;
+	height: 15px;
+	clear: both;
+}
+
+.clear-none {
+    clear: none;
+}
+
+.clear-both {
+    clear: both;
+}
+
+/* 5.2 Floats */ 
+
+.right {
+    float: rigth;
+}
+
+.left {
+    float: left;
+}
+
+.none {
+    float: none;
+}
+
+/* Margin and Paddings */ 
+
+.margin {
+    margin: 10px;
+}
+
+.margin-left {
+    margin-left: 10px;
+}
+
+.mtop {
+    margin-top: 10px;
+}
+
+.nada {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 6.0 Top */
+
+.top {
+	width: 100%;
+	height: 30px;
+	float: left;
+	padding: 5px;
+  background-color: #ffffff;
+	-webkit-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.1);
+	box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.1);
+}
+
+.col-md-4 {
+	margin: 0 auto;
+}
+
+/* 7.0 Sidebar */
+
+
+.sidebar {
+	width: 280px;
+	height: auto;
+	background: #fff;
+	padding: 10px;
+	float: left;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -999999;
+	-webkit-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.1);
+	box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.1);
+}
+
+.item {
+	width: auto;
+	height: inherit;
+	float: left;
+	display: table;
+	margin-right: 15px;
+}
+
+.item .glyphicon {
+    font-size: 12px;
+}
+
+.top p {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 5px;
+	line-height: 0;
+}
+
+.right {
+	float: right;
+}
+
+.right p {
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 0;
+}
+
+/* 8.0 Cutout Border */
+
+.clip-circle {
+	width: 40px;
+	height: auto;
+	position: relative;
+	left: 240px;
+}
+
+.right_circle {
+		width: 45px;
+		height: 45px;
+		border-radius: 80%;
+		text-align: center;
+		font-size: 24px;
+		line-height: 45px;
+		position: relative;
+		right: 40px;
+		top: ;
+}
+
+/* 9.0 Dock */
+
+.dock {
+	float: right;
+	position: fixed;
+	display: inline-block;
+	z-index: 9999;
+	padding: 1em;
+	margin: 2em;
+	bottom: 0;
+	left: 50%;
+  transform: translate(-50%, 0);
+	width:400px;
+	height: 25px;
+}
+
+.dock::before {
+	content: ''; /* To generate the box */
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: -25px;
+	left: 0;
+	z-index: -999999;
+	background: white;
+	transform: perspective(4px) rotateX(1deg);
+  border-radius: 10px 10px 0 0;
+}
+
+.dock img {
+	width: 35px;
+	height: auto;
+	z-index: 9999999;
+	border-radius: 80%;
+	background: #fff;
+}
+
+.dock ul {
+position: relative;
+bottom: 10px;
+}
+
+.dock ul li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+.dock a img:hover {
+	-moz-transform: scale(1.5) translateY(-4px);
+-webkit-transform: scale(1.5) translateY(-4px);
+-o-transform: scale(1.5) translateY(-4px);
+-ms-transform: scale(1.5) translateY(-4px);
+transform: scale(1.5) translateY(-4px);
+border: 2px solid white;
+}
+
+/* 12.0 Chatbox */
+
+.chatbox {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 35px;
+	background: #f2f3f6;
+	color: #d3d3d3;
+}
+
+.chatbox ul li {
+	list-style-type: none;
+	display: inline;
+}
+
+.emoji img {
+	width: auto;
+	height: auto;
+	float: left;
+}
+
+.attachement img, .microphone img {
+	width: auto;
+	height: auto;
+	float: right;
+}
+
+.chat {
+	width: auto;
+	margin: 10px;
+	background: inherit;
+	border: none;
+	overflow: scroll;
+}
+
+/* 13.0 Menu */
+
+.menu {
+	position: relative;
+	display: inline-block;
+	height:25px;
+	width: auto;
+}
+
+.button {
+	border: none;
+	cursor: pointer;
+	width: 60px;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+.button p {
+	clear: none;
+	float: right;
+	position: relative;
+	top: 3px;
+}
+
+.button .right {
+	float: left;
+	position: relative;
+	left: 25px;
+}
+
+.button img {
+	max-width: 16px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.dropdown-content {
+    /*opacity: 0;*/
+		padding: 45px;
+    position: absolute;
+		top: 50px;
+    background-color: #ffffff;
+    min-width: 400px;
+		left: 50%;
+	  transform: translate(-50%, 0);
+}
+
+.dropdown-content img {
+	width: auto;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	margin-right: 5px;
+	float: left;
+}
+
+.dropdown-content .last {
+	margin-right: 0;
+}
+
+.dropdown-content::before {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid red;
+	position: absolute;
+	top: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.menu:hover .button {
+}
+
+.circle {
+	width: 40px;
+	height: auto;
+	position: absolute;
+	top: -25px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	margin: 0 auto;
+}
+
+.dropdown-content form {
+	width: 100%;
+	display: block;
+	position: relative;
+	top: 25px;
+}
+
+.dropdown-content form input {
+	width: 100%;
+	border: none;
+	background: #f1f1f1 url(../img/search.svg) left center no-repeat;
+	background-size: 16px auto;
+	background-position: left;
+	background-origin: content-box;
+	padding: 5px;
+	text-indent: 18px;
+}
+
+.dropdown-content table {
+	display: table;
+	width: 100%;
+}
+
+.dropdown-content table img {
+	width: 75px;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+	padding: 0;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.dropdown-content table p {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	clear: both;
+	margin-bottom: 15px;
+}
+
+.more {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #f1f1f1;
+	padding: 10px;
+	text-align: center;
+	color: #b9bbce;
+}
+.more .extend {
+	width: 90px;
+	margin: 0 auto;
+}
+
+.more .extend img {
+	position: relative;
+	top: 2px;
+}
+
+/* 19.0 Colors */ 
+
+span.green {
+    color: #9aefde;
+}
+
+span.blue {
+    color: #a5cbff;
+}
+
+span.red {
+    color: #ff9ba8;
+}
+
+span.yellow {
+    color: #ffda9a;
+}
+
+span.gray {
+    color: #babccf;
+}
+
+.gray-body {
+    background-color: #f2f3f6;
+}
+
+span.black {
+    color: #414141;
+}
+
+.dark {
+    background: #f7f8fc;
+    color: #b9bbce;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #f2f3f6;
+}
+
+.border-top {
+    border-top: 1px solid #f2f3f6;
+}

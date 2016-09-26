@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #26272e;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Windows" class="cls-1" d="M156,3623h4v-4h12v12h-4v4H156v-12m12,0v6h2v-8h-8v2h6m-10,4v6h8v-6h-8Z" transform="translate(-156 -3619)"/>
+</svg>

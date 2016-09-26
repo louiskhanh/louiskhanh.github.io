@@ -1,0 +1,289 @@
+@import url("main.css");
+
+/* 17.0 Tickets */
+
+body {
+  background-image: none;
+  background-color: #f2f3f6;
+}
+
+#menu {
+  width: 100%;
+  min-height: 35px;
+  padding: 10px;
+  float: left;
+  z-index: -99999;
+  background: #fff;
+  position: relative;
+	z-index: -999999;
+  border-bottom: 1px solid #e1e2ea;
+}
+
+#menu ul {
+  float: left;
+}
+
+#menu ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+#menu li {
+  width: auto;
+  padding: 9px;
+  margin-right: 15px;
+  display: block;
+}
+
+#menu li:hover {
+  border-bottom: 3px solid #4e99ff;
+}
+
+#menu a {
+  text-decoration: none;
+}
+
+#menu img {
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  margin-right: 5px;
+  position: relative;
+  top: 5px;
+}
+
+span .right {
+  float: right;
+  width: auto;
+  background: #eee;
+}
+
+#message {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  background: #fff;
+  float: left;
+  clear: both;
+}
+
+#message .back {
+  height: auto;
+  width: 30px;
+  float: left;
+}
+
+#message .back img {
+  vertical-align: middle;
+}
+
+.details {
+  float: right;
+  text-align: left;
+  width: 96%;
+  padding: 15px;
+  padding-top: 0;
+}
+
+.details h1 {
+  font-size: 1.500em;
+}
+
+.details h3 {
+  font-size: 1.000em;
+  margin-top: 1.00em;
+  color: #b2b4c9;
+}
+
+.details p {
+  margin-top: 1.000em;
+}
+
+.detail span {
+  color: #b2b4c9;
+}
+
+#reply {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.reply {
+  width: 80%;
+  float: left;
+  height: auto;
+  background: #fff;
+  padding: 15px;
+  margin: 10px;
+}
+
+.reply:nth-child(even) {
+  float: right;
+  text-align: right;
+}
+
+.reply:nth-child(even) span.date {
+  text-align: left;
+  float: left;
+}
+
+.divide {
+  width: 50%;
+  float: left;
+  margin-bottom: 15px;
+}
+
+span.date {
+  text-align: right;
+  float: right;
+  display: block;
+  color: #b2b4c9;
+}
+
+span.initials {
+  font-size: 3.000em;
+  background: #62e3a5;
+  padding: 10px 15px 0 15px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: inline-block;
+  color: white;
+  font-family: 'LatoWebHairline';
+  vertical-align: middle;
+  float: left;
+  margin-right: 10px;
+}
+
+span.blue {
+  background: #4e99ff;
+  float: right;
+  position: relative;
+  right: 0;
+  width: auto;
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.reply p {
+  clear: both;
+}
+
+span.job {
+  clear: none;
+  width: auto;
+  float: left;
+  font-size: 1.100em;
+  line-height: 1.500em;
+  margin-top: 10px;
+}
+
+span.name {
+  float: left;
+  clear: none;
+  width: auto;
+  font-size: 1.500em;
+}
+
+span.right_name {
+  float: right;
+  clear: none;
+  width: auto;
+  font-size: 1.500em;
+}
+
+span.right_job {
+  float: right;
+  text-align: right;
+  width: auto;
+  font-size: 1.100em;
+}
+
+.clear-small {
+  width: 100%;
+  height: 20px;
+}
+
+
+#info {
+  width: 100%;
+  min-height: 35px;
+  padding: 10px;
+  float: left;
+  z-index: -99999;
+  background: #f2f3f6;
+  position: relative;
+	z-index: -999999;
+}
+
+.inner {
+  width: 90%;
+  margin: 0 auto;
+  color: #c4c6d6;
+}
+
+.inner table {
+  width: 100%;
+  display: table;
+}
+
+.inner table td {
+  width: 25%;
+  padding: 10px;
+  text-align: left;
+  display: table-cell;
+}
+
+.inner table td:last-child {
+  text-align: right;
+  min-width: 80px;
+}
+
+.type {
+  width: 100%;
+  height: 42px;
+  padding: 10px;
+  margin: 0 auto;
+  clear: both;
+  background: #fff;
+  color: #c4c6d6;
+  z-index: -9999999;
+  position: relative;
+}
+
+.type input {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  width: 80%;
+  margin-left: 5px;
+}
+
+.type img.right {
+  float: right;
+  margin-left: 5px;
+}
+
+.inner .list {
+  background: #fff;
+  padding: 10px;
+  width: 100%;
+  display: table;
+}
+
+.inner .list td {
+  width: 25%;
+  padding: 10px;
+  background: inherit;
+  text-align: left;
+  display: table-cell;
+}
+
+.inner .list td:last-child img {
+  float: right;
+  margin-right: 5px;
+}

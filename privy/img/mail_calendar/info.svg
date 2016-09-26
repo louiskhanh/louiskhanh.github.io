@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b2b4c9;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="info_copy_5" data-name="info copy 5" class="cls-1" d="M3879,930h2v-2h-2m1,13a8,8,0,1,1,8-8,8.011,8.011,0,0,1-8,8m0-18a10,10,0,1,0,10,10,10,10,0,0,0-10-10m-1,15h2v-6h-2v6Z" transform="translate(-3870 -923)"/>
+</svg>

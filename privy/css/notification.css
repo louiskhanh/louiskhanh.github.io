@@ -1,0 +1,42 @@
+/* 7.2 Notifications */
+
+.day {
+	width: 100%;
+	float: left;
+	clear: both;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.title {
+	float: left;
+	width: auto;
+}
+
+.msg {
+	float: left;
+	width: auto;
+	font-family: 'LatoWeb';
+	color: #d3d3d3;
+}
+
+.exit {
+	float: right;
+	font-family: 'LatoWeb';
+	color: #d3d3d3;
+}
+
+.message {
+	width: 86%;
+	float: right;
+	position: relative;
+	bottom: 10px;
+	font-family: 'LatoWebBold';
+}
+
+.message .glyphicon-chevron-down {
+	float: right;
+	font-weight: normal;
+	line-height: 2.00em;
+	color: #d3d3d3;
+}

@@ -1,0 +1,105 @@
+/* 15.0 Workspace */
+
+#menu {
+  width: 100%;
+  min-height: 35px;
+  padding: 10px;
+  float: left;
+  z-index: -99999;
+  background: #fff;
+  position: relative;
+	z-index: -999999;
+  border-bottom: 1px solid #e1e2ea;
+}
+
+#menu ul {
+  float: left;
+}
+
+#menu ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+#menu li {
+  width: auto;
+  padding: 9px;
+  margin-right: 15px;
+  display: block;
+}
+
+#menu li:hover {
+  border-bottom: 3px solid #4e99ff;
+}
+
+#menu a {
+  text-decoration: none;
+}
+
+#menu img {
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  margin-right: 5px;
+  position: relative;
+  top: 5px;
+  cursor: pointer;
+}
+
+span .right {
+  float: right;
+  width: auto;
+  background: #eee;
+}
+
+#secondary {
+  width: 100%;
+  min-height: 35px;
+  padding: 10px;
+  float: left;
+  background: #fff;
+  position: relative;
+	z-index: -999999;
+  border-bottom: 1px solid #e1e2ea;
+}
+
+#secondary img {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#secondary .drop {
+  position: relative;
+  bottom: 2px;
+}
+
+body {
+  background-image: none;
+  background-color: #f2f3f6;
+}
+
+ul.workspace {
+  margin: 0;
+  padding: 0 100px;
+  display: block;
+}
+
+ul.workspace li {
+  background: none repeat scroll 0 0 #FCFCFC;
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  z-index: 100;
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+ul.workspace li p.name{
+  height: 25px;
+  overflow: hidden;
+}

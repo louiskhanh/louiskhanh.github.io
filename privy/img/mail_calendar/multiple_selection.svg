@@ -1,0 +1,12 @@
+<svg id="selection" xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b2b4c9;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="dropdown_copy" data-name="dropdown copy" class="cls-1" d="M1397.49,667.007l-3.5-4.008h7Z" transform="translate(-1367 -653)"/>
+  <path id="multiple_selection" data-name="multiple selection" class="cls-1" d="M1385,667v-6h2v6a2,2,0,0,1-2,2h-12a2,2,0,0,1-2-2V655a1.993,1.993,0,0,1,2-2h8v2h-8v12h12m-9.09-8.92,3.09,3.09,6.59-6.59L1387,656l-8,8-4.5-4.5,1.41-1.42M1381,671v2h-12a2,2,0,0,1-2-2V658h2v13h12Z" transform="translate(-1367 -653)"/>
+</svg>
